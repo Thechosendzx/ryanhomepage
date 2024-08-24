@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}To Shoot or Not to Shoot...?{% endblock %}
+
+{% block content %}
+<!-- Link to the Google Font for Lobster -->
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<!-- Section for the Project -->
+<section id="project" class="background2">
+ 
+    <h1 style="font-family: 'Lobster', cursive;"></h1>
+    <p>A photography enthusiast, whose main work involves capturing others, finds herself increasingly haunted by a question:<b> To Shoot or Not to Shoot?</b> <br> <br> As models take the stage, photographers freely command them to strike poses, commands the models instinctively obey. This subconscious compliance prompts a deep ethical dilemma: Is it truly ethical? Could it inadvertently infringe upon the models' human rights? Contemplating these questions leads herto cease shooting, plunging her into a profound dilemma.</p>
+    
+    <!-- Poster Image -->
+    <div class="poster">
+        <img src="static/img/poster 1.png" alt="Poster">
+    </div>
+</section>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<section id="expece" class="headings">
+    <h1 style="font-family: 'Lobster', cursive;">Plot Overview</h1>
+</section>
+
+
+
+<style>
+   .video-container {
+        position: absolute; /* 设置绝对定位，使其可以根据页面的左下角定位 */
+        left: 800px; /* 距离左侧20px */
+        bottom: 370px; /* 距离底部20px */
+        margin: 0;
+        padding: 0;
+    }
+    
+    iframe {
+        width: 750px;
+        height: 445px;
+        border: 5px solid rgba(255, 255, 255, 0.2); /* 半透明的白色边框 */
+        border-radius: 15px; /* 圆角边框 */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* 添加淡黑色阴影，增强立体感 */
+    }
+</style>
+</head>
+<body>
+<div class="video-container">
+    <!-- Embed Panopto Video -->
+    <iframe src="https://uncch.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=4f10b261-3bda-49d7-8853-b1690036d6ae&v=1"
+            allowfullscreen="true">
+    </iframe>
+</div>
+</body>
+{% endblock %}

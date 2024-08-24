@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}Additional PRojects{% endblock %}
+
+{% block content %}
+<style>
+    .background3 {
+        background: linear-gradient(45deg, #ecb39c, #1721b4, #1cd319);
+        background-size: 400% 400%; 
+        animation: slide 40s ease infinite;
+        min-width: 100vw; 
+        min-height: 100vh; 
+        position: fixed; 
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    @keyframes slide {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    .img-fluid {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .large-image, .small-image {
+        padding: 5px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+        padding-bottom: 0px; /* Increased padding at the bottom to push the footer down */
+    }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<section id="gallery" class="background3">
+    <h3>Additional Projects</h3>
+    <hr>
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Large Images (1 and 3) -->
+            <div class="col-md-6">
+                <div class="large-image">
+                    <img src="https://raw.githubusercontent.com/Thechosendzx/Thechosendzx.github.io/main/image/r1.jpg" alt="Gallery Image 1" class="img-fluid">
+                </div>
+                <div class="large-image">
+               Click to view more
+                </div>
+            </div>
+            <!-- Small Image (2) -->
+            <div class="col-md-6">
+                <div class="small-image">
+                    <img src="https://raw.githubusercontent.com/Thechosendzx/Thechosendzx.github.io/main/image/r3.jpg" alt="Gallery Image 2" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
